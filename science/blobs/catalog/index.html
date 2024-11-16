@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" class="wide wow-animation">
+  <head>
+    <!-- Site Title-->
+    <title>Catalog</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway:400,300%7CMontserrat:400,700">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <!-- Include any additional CSS needed for the catalog (e.g., DataTables) -->
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+
+    <!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;">
+      <a href="http://windows.microsoft.com/en-US/internet-explorer/">
+        <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today.">
+      </a>
+    </div>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Page-->
+    <div class="page text-center text-md-left">
+      <!-- Page Header-->
+      <header class="page-head bg-image bg-image-1 bg-fixed section-55 section-sm-80 section-xl-bottom-270 section-lg-80">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed" class="rd-navbar">
+            <div class="rd-navbar-inner">
+              <div class="rd-navbar-panel">
+                <button data-rd-navbar-toggle=".rd-navbar-nav-wrap" class="rd-navbar-toggle"><span></span></button>
+              </div>
+              <div class="rd-navbar-nav-wrap">
+                <!-- RD Navbar Nav-->
+                <ul class="rd-navbar-nav">
+                  <li class="active"><a href="#home">Home</a></li>
+                  <li><a href="#intro">Introduction</a></li>
+                  <!-- You can add more navigation links if needed -->
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="shell shell-wide">
+          <div class="range range-md-middle">
+            <div class="cell-md-6">
+              <a href="../" class="brand">
+                <img src="../../images/lya_blob.jpg" alt="" class="img-responsive">
+              </a>
+            </div>
+            <div class="cell-md-6 text-md-right">
+              <!-- Additional header content if needed -->
+            </div>
+          </div>
+        </div>
+        <div id="home" data-type="anchor" class="shell shell-wide">
+          <div class="range">
+            <div class="cell-lg-preffix-1 cell-lg-8 cell-xl-6">
+              <h1>Lyman-alpha Blobs Catalog</h1>
+              <p class="big postfix-xl-right--30">
+                <!-- You can add an introductory paragraph here -->
+                Welcome to the comprehensive catalog of Lyman-alpha Blobs compiled during my PhD research.
+              </p>
+            </div>
+            <div class="cell-lg-preffix-1 cell-lg-1 text-md-right cell-md-bottom cell-xl-preffix-3">
+              <!-- Additional content if needed -->
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Page Content-->
+      <main class="page-content">
+        <!-- Remove or comment out existing sections -->
+        <!--
+        <section class="bg-white section-50 section-lg-80 section-xl-100">
+          <!-- Existing content -->
+        <!--</section>
+        -->
+
+        <!-- Insert the catalog table here -->
+        <section class="section-55 section-sm-80 section-xl-240 bg-image bg-image-2 bg-fixed section-lg-140 section-md-100">
+          <div id="catalog" data-type="anchor" class="shell shell-wide">
+            <div class="range text-center">
+              <div class="cell-lg-12">
+                <h2 class="heading">Catalog</h2>
+                <!-- Catalog Table -->
+                <table id="catalogTable" class="table table-striped table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Object Name</th>
+                      <th>Field Name</th>
+                      <th>RA</th>
+                      <th>DEC</th>
+                      <th>Mag G</th>
+                      <th>Mag R</th>
+                      <th>Mag I</th>
+                      <th>Redshift</th>
+                      <th>Lya Lum</th>
+                      <th>Lya EW</th>
+                      <th>Image</th>
+                      <th>Downloads</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- Data will be populated by JavaScript -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- Page Footer-->
+      <footer class="page-foot bg-image bg-image-3 bg-fixed">
+        <div id="conclusion" data-type="anchor" class="shell shell-wide">
+          <div class="range">
+            <div class="cell-md-5 cell-xl-3">
+              <h2 class="heading heading-mod">Conclusion</h2>
+              <p>Thank you for visiting the catalog. For more information, please contact me.</p>
+            </div>
+            <div class="cell-md-preffix-1 cell-md-6 cell-xl-preffix-1 cell-xl-3">
+              <!-- Additional footer content if needed -->
+            </div>
+            <div class="cell-lg-12 cell-xl-5 offset-sm-top-60 text-md-center offset-top-50 text-lg-left offset-xl-top-0">
+              <div class="range range-lg-bottom range-lg-justify range-xl-left">
+                <div class="cell-lg-6 cell-xl-10 cell-xl-preffix-2">
+                  <div class="preffix-xl-left-30">
+                    <address class="address">
+                      <dl class="contact-info">
+                        <dt>tel:</dt>
+                        <dd><a href="callto:#">805-315-3183</a></dd>
+                      </dl>
+                      <a href="mailto:godines@nmsu.edu">godines@nmsu.edu</a>
+                      <p class="offset-xl-top-15">No matter what happens on Earth, astronomers will have the sky.</p>
+                    </address>
+                    <ul class="list-inline list-inline-sm">
+                      <li><a href="https://www.linkedin.com/in/daniel-godinez" class="icon icon-white fa-linkedin"></a></li>
+                      <li><a href="https://github.com/Professor-G" class="icon icon-white fa-github"></a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="cell-lg-3 text-lg-center cell-xl-10 text-xl-left offset-xl-top-110">
+                  <a href="index.html" class="brand preffix-xl-left-30">
+                    <img src="../../images/wave.jpg" width="235" height="142" alt="" class="img-responsive">
+                  </a>
+                  <span class="copyright">&#169; <span id="copyright-year"></span> | <span>All Rights Reserved</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- JavaScript-->
+    <script src="../../js/core.min.js"></script> <!-- Assuming this includes jQuery -->
+    <script src="../../js/script.js"></script> <!-- Your custom scripts -->
+    <!-- DataTables JS -->
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
+    <!-- Your custom script -->
+    <script src="catalog.js"></script>
+  </body>
+</html>
