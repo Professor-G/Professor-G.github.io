@@ -24,7 +24,7 @@ $(document).ready(function() {
             row += '<td>';
             if (obj.image_filename) {
                 row += '<a href="#" data-toggle="modal" data-target="#imageModal' + index + '">';
-                row += '<img src="../../../' + obj.image_filename + '" alt="' + obj.object_name + '" class="img-thumbnail" width="150">';
+                row += '<img src="../../' + obj.image_filename + '" alt="' + obj.object_name + '" class="img-thumbnail" width="150">';
                 row += '</a>';
 
                 // Modal structure
@@ -38,7 +38,7 @@ $(document).ready(function() {
                 row += '        </button>';
                 row += '      </div>';
                 row += '      <div class="modal-body text-center">';
-                row += '        <img src="../../../' + obj.image_filename + '" alt="' + obj.object_name + '" class="img-fluid">';
+                row += '        <img src="../../' + obj.image_filename + '" alt="' + obj.object_name + '" class="img-fluid">';
                 row += '      </div>';
                 row += '    </div>';
                 row += '  </div>';
@@ -52,11 +52,11 @@ $(document).ready(function() {
             row += '<td>';
             var hasDownload = false;
             if (obj.image_data_filename) {
-                row += '<a href="../../../' + obj.image_data_filename + '" download>Image Data (.npy)</a><br>';
+                row += '<a href="../../' + obj.image_data_filename + '" download>Image Data (.npy)</a><br>';
                 hasDownload = true;
             }
             if (obj.spectra_data_filename) {
-                row += '<a href="../../../' + obj.spectra_data_filename + '" download>Spectra Data (.txt)</a>';
+                row += '<a href="../../' + obj.spectra_data_filename + '" download>Spectra Data (.txt)</a>';
                 hasDownload = true;
             }
             if (!hasDownload) {
