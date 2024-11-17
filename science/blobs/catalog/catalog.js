@@ -52,11 +52,11 @@ $(document).ready(function() {
             row += '<td>';
             var hasDownload = false;
             if (obj.image_data_filename) {
-                row += '<a href="../../../' + obj.image_data_filename + '" download>Image Data (.npy)</a><br>';
+                row += '<a href="../../../' + obj.image_data_filename + '" download>Image Data</a><br>';
                 hasDownload = true;
             }
             if (obj.spectra_data_filename) {
-                row += '<a href="../../../' + obj.spectra_data_filename + '" download>Spectra Data (.txt)</a>';
+                row += '<a href="../../../' + obj.spectra_data_filename + '" download>Spectral Data</a>';
                 hasDownload = true;
             }
             if (!hasDownload) {
