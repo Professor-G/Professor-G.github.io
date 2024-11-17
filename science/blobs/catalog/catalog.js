@@ -20,20 +20,22 @@ $(document).ready(function() {
             row += '<td>' + (obj.luminosity !== null && obj.luminosity !== undefined ? obj.luminosity.toExponential(2) : 'N/A') + '</td>';
             row += '<td>' + (obj.equivalent_width !== null && obj.equivalent_width !== undefined ? obj.equivalent_width : 'N/A') + '</td>';
 
-            // Display the compiled image with a modal
+            // Display the compiled image with a modal (Bootstrap 4 syntax)
             row += '<td>';
             if (obj.image_filename) {
-                row += '<a href="#" data-bs-toggle="modal" data-bs-target="#imageModal' + index + '">';
+                row += '<a href="#" data-toggle="modal" data-target="#imageModal' + index + '">';
                 row += '<img src="../../../' + obj.image_filename + '" alt="' + obj.object_name + '" class="img-thumbnail" width="150">';
                 row += '</a>';
 
                 // Modal structure
-                row += '<div class="modal fade" id="imageModal' + index + '" tabindex="-1" aria-labelledby="modalLabel' + index + '" aria-hidden="true">';
-                row += '  <div class="modal-dialog modal-lg">';
+                row += '<div class="modal fade" id="imageModal' + index + '" tabindex="-1" role="dialog" aria-labelledby="modalLabel' + index + '" aria-hidden="true">';
+                row += '  <div class="modal-dialog modal-lg" role="document">';
                 row += '    <div class="modal-content">';
                 row += '      <div class="modal-header">';
                 row += '        <h5 class="modal-title" id="modalLabel' + index + '">' + obj.object_name + '</h5>';
-                row += '        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>';
+                row += '        <button type="button" class="close" data-dismiss="modal" aria-label="Close">';
+                row += '          <span aria-hidden="true">&times;</span>';
+                row += '        </button>';
                 row += '      </div>';
                 row += '      <div class="modal-body text-center">';
                 row += '        <img src="../../../' + obj.image_filename + '" alt="' + obj.object_name + '" class="img-fluid">';
