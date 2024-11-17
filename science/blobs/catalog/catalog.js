@@ -43,6 +43,7 @@ $(document).ready(function() {
                 row += '    </div>';
                 row += '  </div>';
                 row += '</div>';
+
             } else {
                 row += 'No image available';
             }

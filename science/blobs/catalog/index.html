@@ -154,16 +154,20 @@
       </footer>
     </div>
 
-    <!-- JavaScript-->
-    <script src="../../../js/core.min.js"></script> <!-- Assuming this includes jQuery -->
-    <script src="../../../js/script.js"></script> <!-- Your custom scripts -->
+    <!-- JavaScript -->
+    <!-- Load jQuery first -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Load Bootstrap JS after jQuery -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <!-- DataTables JS -->
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.js"></script>
-    <!-- jQuery (required for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Your custom script -->
+
+    <!-- Your custom scripts -->
+    <script src="../../../js/core.min.js"></script> <!-- Remove if this includes jQuery -->
+    <script src="../../../js/script.js"></script>
     <script src="catalog.js"></script>
+
   </body>
 </html>
