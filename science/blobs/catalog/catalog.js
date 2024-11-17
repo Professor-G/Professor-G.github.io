@@ -10,9 +10,10 @@ $(document).ready(function() {
             var row = '<tr>';
 
             row += '<td>' + obj.object_name + '</td>';
-            row += '<td>' + obj.field_name + '</td>';
+            // row += '<td>' + obj.field_name + '</td>';
             row += '<td>' + (obj.ra !== null && obj.ra !== undefined ? obj.ra.toFixed(5) : 'N/A') + '</td>';
             row += '<td>' + (obj.dec !== null && obj.dec !== undefined ? obj.dec.toFixed(5) : 'N/A') + '</td>';
+            row += '<td>' + (obj.Proba !== null && obj.Proba !== undefined ? obj.Proba : 'N/A') + '</td>';
             row += '<td>' + (obj.magnitudes_G !== null && obj.magnitudes_G !== undefined ? obj.magnitudes_G : 'N/A') + '</td>';
             row += '<td>' + (obj.magnitudes_R !== null && obj.magnitudes_R !== undefined ? obj.magnitudes_R : 'N/A') + '</td>';
             row += '<td>' + (obj.magnitudes_I !== null && obj.magnitudes_I !== undefined ? obj.magnitudes_I : 'N/A') + '</td>';
