@@ -10,7 +10,6 @@ $(document).ready(function() {
             var row = '<tr>';
 
             row += '<td>' + obj.object_name + '</td>';
-            // row += '<td>' + obj.field_name + '</td>';
             row += '<td>' + (obj.ra !== null && obj.ra !== undefined ? obj.ra.toFixed(5) : 'N/A') + '</td>';
             row += '<td>' + (obj.dec !== null && obj.dec !== undefined ? obj.dec.toFixed(5) : 'N/A') + '</td>';
             row += '<td>' + (obj.Proba !== null && obj.Proba !== undefined ? obj.Proba : 'N/A') + '</td>';
