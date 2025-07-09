@@ -96,15 +96,13 @@
       <!-- Interests Section: single-column layout with image and paragraph side by side -->
       <section class="page-head bg-image bg-image-2 bg-fixed section-55 section-sm-80 section-xl-bottom-270 section-lg-80">
         <div class="shell shell-wide">
-          <!-- Caption above heading wrapped in original box -->
-          <div class="box-wrap-1 text-center mb-3">
-            <div class="box-wrap-1-caption">
-              <div class="h2 heading heading-mod"></div>
-              <div class="h7"><br><b><font size="+1">Click on the images to learn about my current pursuits!</font></b></div>
+          <!-- Combined heading and caption inside original box -->
+          <div class="box-wrap-1 mb-3">
+            <div class="box-wrap-1-caption" style="display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:1rem;">
+              <h2 class="heading heading-custom mb-0">Interests</h2>
+              <div class="h7"><b><font size="+1">Click on the images to learn about my current pursuits!</font></b></div>
             </div>
           </div>
-
-          <h2 class="heading heading-custom text-center">Interests</h2>
 
           <div class="interests-list">
 
@@ -122,11 +120,11 @@
             <!-- Interest Item 2 -->
             <div class="interest-item">
               <a href="science/blobs" class="interest-img">
-                <img src="images/blob_250.jpg" alt="Lyman‑alpha Blobs" class="img-responsive">
+                <img src="images/blob_250.jpg" alt="Lyman-alpha Blobs" class="img-responsive">
               </a>
               <div class="interest-content">
-                <h4><a href="science/blobs">Lyman‑alpha Blobs</a></h4>
-                <p>I developed the first scalable machine‑learning pipeline for detecting Lyman‑alpha blobs (LABs) using only broadband imaging, enabling blind searches for these rare, high‑redshift sources across wide‑field survey data. This multi‑stage framework combines ensemble classifiers, anomaly detection, and a convolutional neural network to identify LAB candidates directly from morphology and colour.</p>
+                <h4><a href="science/blobs">Lyman-alpha Blobs</a></h4>
+                <p>I developed the first scalable machine learning pipeline for detecting Lyman-alpha blobs (LABs) using only broadband imaging, enabling blind searches for these rare, high-redshift sources across wide-field survey data. This pioneering, multi-stage framework overcame the limitations of narrowband selection by combining ensemble classifiers, anomaly detection, and a convolutional neural network to identify LAB candidates directly from broadband morphology and color.</p>
               </div>
             </div>
 
@@ -137,7 +135,7 @@
               </a>
               <div class="interest-content">
                 <h4><a href="science/planet9">Protoplanetary Disks</a></h4>
-                <p>I use 3‑D self‑gravitating simulations of the streaming instability to study solid concentration and planetesimal formation in turbulent disks. My work shows that overdense filaments generate optically thick sub‑millimetre emission, leading to significant disk‑mass underestimates when optically thin assumptions are applied. Radiative‑transfer post‑processing, including dust scattering, links these simulations to ALMA observables.</p>
+                <p>I have conducted theoretical work on solid concentration and planetesimal formation in turbulent disks. I used 3D self-gravitating simulations of the streaming instability to show that overdense filaments generate optically thick sub-millimeter emission, leading to significant underestimates of disk mass when standard optically thin assumptions are applied. This work combined large-scale numerical modeling on HPC systems with radiative transfer post-processing, including dust scattering, to produce synthetic ALMA observables and quantify the mass bias introduced by unresolved small-scale structure.</p>
               </div>
             </div>
 
@@ -148,7 +146,7 @@
               </a>
               <div class="interest-content">
                 <h4><a href="science/slime-mold">Dark Matter</a></h4>
-                <p>I use microlensing as a probe of compact dark objects. In one study we projected LSST constraints on primordial black‑hole dark matter, showing that controlling the false‑positive rate is critical for competitive limits. By simulating realistic light curves and evaluating classifiers—including χ² fits, boosted trees, and Bayesian model selection—we demonstrated how machine learning enhances PBH sensitivity in next‑generation surveys.</p>
+                <p>I have also contributed to dark matter research, using microlensing as a probe of compact dark objects. In one study, we projected LSST constraints on the abundance of primordial black holes (PBHs) as a dark matter component, demonstrating that control of the false positive rate is critical for achieving competitive limits. By simulating realistic light curves and evaluating classifiers based on χ², Boosted Decision Trees, and Bayesian-based model selection, we showed how machine learning can enhance PBH sensitivity in next-generation time-domain surveys. In related work, we applied unsupervised anomaly detection to identify microlensing events directly from LSST-like light curves, enabling real-time filtering of rare transients — including those caused by compact dark matter — with minimal assumptions about signal shape.</p>
               </div>
             </div>
 
@@ -159,7 +157,7 @@
               </a>
               <div class="interest-content">
                 <h4><a href="science/green-beans">Green Bean Galaxies</a></h4>
-                <p>Summary of current work on extreme emission‑line “Green Bean” galaxies—placeholder text to be expanded.</p>
+                <p>Summary...</p>
               </div>
             </div>
 
@@ -170,7 +168,7 @@
               </a>
               <div class="interest-content">
                 <h4><a href="science/yum">Food!</a></h4>
-                <p>I’m willing to drive up to six hours (one way) for something truly delicious.</p>
+                <p>I’m willing to drive up to six hours (one way) for yummy food.</p>
               </div>
             </div>
 
@@ -178,45 +176,46 @@
         </div> <!-- /.shell -->
       </section>
 
-        <!-- Styles specific to Interests section -->
-        <style>
-          .interests-list {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem; /* space between items */
-            margin-top: 2rem; /* space below heading */
-          }
+      <!-- Styles specific to Interests section -->
+      <style>
+        .interests-list {
+          display: flex;
+          flex-direction: column;
+          gap: 2rem; /* space between items */
+          margin-top: 2rem; /* space below heading */
+        }
 
+        .interest-item {
+          display: flex;
+          align-items: center;
+        }
+
+        .interest-img img {
+          max-width: 160px;
+          height: auto;
+          border-radius: 8px;
+          margin-right: 1.5rem;
+        }
+
+        .interest-content h4 {
+          margin-top: 0;
+          margin-bottom: 0.5rem;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
           .interest-item {
-            display: flex;
-            align-items: center;
+            flex-direction: column;
+            text-align: center;
           }
 
           .interest-img img {
-            max-width: 160px;
-            height: auto;
-            border-radius: 8px;
-            margin-right: 1.5rem;
+            margin-right: 0;
+            margin-bottom: 1rem;
           }
+        }
+      </style>
 
-          .interest-content h4 {
-            margin-top: 0;
-            margin-bottom: 0.5rem;
-          }
-
-          /* Mobile responsiveness */
-          @media (max-width: 768px) {
-            .interest-item {
-              flex-direction: column;
-              text-align: center;
-            }
-
-            .interest-img img {
-              margin-right: 0;
-              margin-bottom: 1rem;
-            }
-          }
-        </style>
         <!-- Space news-->
         <section class="section-55 section-sm-80 section-xl-240 bg-image bg-image-2 bg-fixed section-lg-140 section-md-100">
           <div class="shell shell-wide">
