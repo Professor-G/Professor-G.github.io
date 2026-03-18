@@ -34153,7 +34153,19 @@ thead.thead-dark th {
 
 
 
+/* Only apply the big nudge on Desktop screens */
+@media (min-width: 992px) {
+  .rd-navbar-nav > li:first-child {
+    margin-top: 450px !important;
+  }
+}
 
+/* On smaller screens (Sidebar view), we keep the margin small or zero */
+@media (max-width: 991px) {
+  .rd-navbar-nav > li:first-child {
+    margin-top: 0 !important;
+  }
+}
 
 
 /*# sourceMappingURL=style.css.map */
